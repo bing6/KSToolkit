@@ -77,6 +77,7 @@
 		372F643F1BA02E0300A595A3 /* UIView+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KS.m"; sourceTree = "<group>"; };
 		372F64401BA02E0300A595A3 /* UIButton+KS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KS.h"; sourceTree = "<group>"; };
 		372F64411BA02E0300A595A3 /* UIButton+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KS.m"; sourceTree = "<group>"; };
+		372F64471BA03A9000A595A3 /* KSToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSToolkit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +164,7 @@
 				372F64371BA02DD600A595A3 /* NSCategory */,
 				372F64361BA02DCC00A595A3 /* UIKitCategory */,
 				372F64201BA01F4600A595A3 /* KSMacros.h */,
+				372F64471BA03A9000A595A3 /* KSToolkit.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
