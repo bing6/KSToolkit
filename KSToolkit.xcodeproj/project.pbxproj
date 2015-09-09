@@ -21,6 +21,11 @@
 		372F64331BA022E500A595A3 /* NSMutableDictionary+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F642A1BA022E500A595A3 /* NSMutableDictionary+KS.m */; };
 		372F64341BA022E500A595A3 /* NSString+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F642C1BA022E500A595A3 /* NSString+KS.m */; };
 		372F64351BA022E500A595A3 /* NSURL+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F642E1BA022E500A595A3 /* NSURL+KS.m */; };
+		372F64421BA02E0300A595A3 /* UIImage+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F64391BA02E0300A595A3 /* UIImage+KS.m */; };
+		372F64431BA02E0300A595A3 /* UIImageView+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F643B1BA02E0300A595A3 /* UIImageView+KS.m */; };
+		372F64441BA02E0300A595A3 /* UITableView+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F643D1BA02E0300A595A3 /* UITableView+KS.m */; };
+		372F64451BA02E0300A595A3 /* UIView+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F643F1BA02E0300A595A3 /* UIView+KS.m */; };
+		372F64461BA02E0300A595A3 /* UIButton+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F64411BA02E0300A595A3 /* UIButton+KS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +67,16 @@
 		372F642C1BA022E500A595A3 /* NSString+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KS.m"; sourceTree = "<group>"; };
 		372F642D1BA022E500A595A3 /* NSURL+KS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+KS.h"; sourceTree = "<group>"; };
 		372F642E1BA022E500A595A3 /* NSURL+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+KS.m"; sourceTree = "<group>"; };
+		372F64381BA02E0300A595A3 /* UIImage+KS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KS.h"; sourceTree = "<group>"; };
+		372F64391BA02E0300A595A3 /* UIImage+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KS.m"; sourceTree = "<group>"; };
+		372F643A1BA02E0300A595A3 /* UIImageView+KS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+KS.h"; sourceTree = "<group>"; };
+		372F643B1BA02E0300A595A3 /* UIImageView+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KS.m"; sourceTree = "<group>"; };
+		372F643C1BA02E0300A595A3 /* UITableView+KS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+KS.h"; sourceTree = "<group>"; };
+		372F643D1BA02E0300A595A3 /* UITableView+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+KS.m"; sourceTree = "<group>"; };
+		372F643E1BA02E0300A595A3 /* UIView+KS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KS.h"; sourceTree = "<group>"; };
+		372F643F1BA02E0300A595A3 /* UIView+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KS.m"; sourceTree = "<group>"; };
+		372F64401BA02E0300A595A3 /* UIButton+KS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KS.h"; sourceTree = "<group>"; };
+		372F64411BA02E0300A595A3 /* UIButton+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KS.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +160,33 @@
 		372F63BB1BA01D2200A595A3 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				372F64371BA02DD600A595A3 /* NSCategory */,
+				372F64361BA02DCC00A595A3 /* UIKitCategory */,
 				372F64201BA01F4600A595A3 /* KSMacros.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		372F64361BA02DCC00A595A3 /* UIKitCategory */ = {
+			isa = PBXGroup;
+			children = (
+				372F64381BA02E0300A595A3 /* UIImage+KS.h */,
+				372F64391BA02E0300A595A3 /* UIImage+KS.m */,
+				372F643A1BA02E0300A595A3 /* UIImageView+KS.h */,
+				372F643B1BA02E0300A595A3 /* UIImageView+KS.m */,
+				372F643C1BA02E0300A595A3 /* UITableView+KS.h */,
+				372F643D1BA02E0300A595A3 /* UITableView+KS.m */,
+				372F643E1BA02E0300A595A3 /* UIView+KS.h */,
+				372F643F1BA02E0300A595A3 /* UIView+KS.m */,
+				372F64401BA02E0300A595A3 /* UIButton+KS.h */,
+				372F64411BA02E0300A595A3 /* UIButton+KS.m */,
+			);
+			name = UIKitCategory;
+			sourceTree = "<group>";
+		};
+		372F64371BA02DD600A595A3 /* NSCategory */ = {
+			isa = PBXGroup;
+			children = (
 				372F64211BA022E500A595A3 /* NSArray+KS.h */,
 				372F64221BA022E500A595A3 /* NSArray+KS.m */,
 				372F64231BA022E500A595A3 /* NSDate+KS.h */,
@@ -161,7 +202,7 @@
 				372F642D1BA022E500A595A3 /* NSURL+KS.h */,
 				372F642E1BA022E500A595A3 /* NSURL+KS.m */,
 			);
-			path = src;
+			name = NSCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,12 +308,17 @@
 				372F64351BA022E500A595A3 /* NSURL+KS.m in Sources */,
 				372F64311BA022E500A595A3 /* NSDictionary+KS.m in Sources */,
 				372F64341BA022E500A595A3 /* NSString+KS.m in Sources */,
+				372F64421BA02E0300A595A3 /* UIImage+KS.m in Sources */,
 				372F642F1BA022E500A595A3 /* NSArray+KS.m in Sources */,
 				372F639E1BA01B7C00A595A3 /* ViewController.m in Sources */,
 				372F64321BA022E500A595A3 /* NSMutableArray+KS.m in Sources */,
+				372F64461BA02E0300A595A3 /* UIButton+KS.m in Sources */,
+				372F64441BA02E0300A595A3 /* UITableView+KS.m in Sources */,
 				372F639B1BA01B7C00A595A3 /* AppDelegate.m in Sources */,
+				372F64431BA02E0300A595A3 /* UIImageView+KS.m in Sources */,
 				372F64331BA022E500A595A3 /* NSMutableDictionary+KS.m in Sources */,
 				372F63981BA01B7C00A595A3 /* main.m in Sources */,
+				372F64451BA02E0300A595A3 /* UIView+KS.m in Sources */,
 				372F64301BA022E500A595A3 /* NSDate+KS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
