@@ -1,2 +1,2 @@
 # KSToolkit
-常用代码
+pod 'KSToolkit', '~> 1.0'
