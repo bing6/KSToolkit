@@ -26,6 +26,7 @@
 		372F64441BA02E0300A595A3 /* UITableView+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F643D1BA02E0300A595A3 /* UITableView+KS.m */; };
 		372F64451BA02E0300A595A3 /* UIView+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F643F1BA02E0300A595A3 /* UIView+KS.m */; };
 		372F64461BA02E0300A595A3 /* UIButton+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F64411BA02E0300A595A3 /* UIButton+KS.m */; };
+		BDE5DF5B2EA5749C45365288 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 200B6B65A4E231F007F75524 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200B6B65A4E231F007F75524 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		372F63921BA01B7B00A595A3 /* KSToolkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSToolkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		372F63961BA01B7B00A595A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372F63971BA01B7C00A595A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +80,8 @@
 		372F64401BA02E0300A595A3 /* UIButton+KS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KS.h"; sourceTree = "<group>"; };
 		372F64411BA02E0300A595A3 /* UIButton+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KS.m"; sourceTree = "<group>"; };
 		372F64471BA03A9000A595A3 /* KSToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSToolkit.h; sourceTree = "<group>"; };
+		515B515470CDFCE557D7A446 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9AE41D314ED4872015B402C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE5DF5B2EA5749C45365288 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04912055151C1064B6D00C8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				200B6B65A4E231F007F75524 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		372F63891BA01B7B00A595A3 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,8 @@
 				372F63941BA01B7B00A595A3 /* KSToolkit */,
 				372F63AE1BA01B7C00A595A3 /* KSToolkitTests */,
 				372F63931BA01B7B00A595A3 /* Products */,
+				4E16681F9F2C5BC4A6D1C71B /* Pods */,
+				04912055151C1064B6D00C8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +222,15 @@
 			name = NSCategory;
 			sourceTree = "<group>";
 		};
+		4E16681F9F2C5BC4A6D1C71B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AE41D314ED4872015B402C8 /* Pods.debug.xcconfig */,
+				515B515470CDFCE557D7A446 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 372F63B51BA01B7C00A595A3 /* Build configuration list for PBXNativeTarget "KSToolkit" */;
 			buildPhases = (
+				2A1D50CFEB06DDB1C0720C8D /* Check Pods Manifest.lock */,
 				372F638E1BA01B7B00A595A3 /* Sources */,
 				372F638F1BA01B7B00A595A3 /* Frameworks */,
 				372F63901BA01B7B00A595A3 /* Resources */,
+				5D98A553925991D59166046B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,6 +327,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A1D50CFEB06DDB1C0720C8D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D98A553925991D59166046B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		372F638E1BA01B7B00A595A3 /* Sources */ = {
@@ -445,6 +504,7 @@
 		};
 		372F63B61BA01B7C00A595A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE41D314ED4872015B402C8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KSToolkit/Info.plist;
@@ -455,6 +515,7 @@
 		};
 		372F63B71BA01B7C00A595A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515B515470CDFCE557D7A446 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KSToolkit/Info.plist;

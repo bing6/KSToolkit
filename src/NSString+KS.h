@@ -20,4 +20,34 @@
  */
 + (NSString *)GUID;
 
+/**
+ * @brief MD5加密
+ */
++ (id)MD5EncryptionWithString:(NSString *)str;
+
+/**
+ * @brief MD5加密
+ */
+- (NSString *)toMD5Encryption;
+
+/**
+ * @brief AES加密
+ */
++ (id)AESEncryptionWithKey:(NSString *)key withString:(NSString *)str;
+
+/**
+ * @brief AES解密
+ */
++ (id)AESDecryptionWithKey:(NSString *)key withString:(NSString *)str;
+
+/**
+ * @brief AES加密
+ */
+- (NSString *)toAESEncryptionWithKey:(NSString *)key;
+
+/**
+ * @brief AES解密
+ */
+- (NSString *)toAESDecryptionWithKey:(NSString *)key;
+
 @end
