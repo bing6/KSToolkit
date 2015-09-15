@@ -1,2 +1,2 @@
 # KSToolkit
-pod 'KSToolkit', '~> 1.0'
+pod 'KSToolkit', '~> 0.2'
