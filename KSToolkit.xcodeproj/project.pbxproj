@@ -26,7 +26,7 @@
 		372F64441BA02E0300A595A3 /* UITableView+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F643D1BA02E0300A595A3 /* UITableView+KS.m */; };
 		372F64451BA02E0300A595A3 /* UIView+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F643F1BA02E0300A595A3 /* UIView+KS.m */; };
 		372F64461BA02E0300A595A3 /* UIButton+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 372F64411BA02E0300A595A3 /* UIButton+KS.m */; };
-		BDE5DF5B2EA5749C45365288 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 200B6B65A4E231F007F75524 /* libPods.a */; };
+		376207D91BAFF806003CBE02 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 376207D71BAFF806003CBE02 /* Base64.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +80,8 @@
 		372F64401BA02E0300A595A3 /* UIButton+KS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KS.h"; sourceTree = "<group>"; };
 		372F64411BA02E0300A595A3 /* UIButton+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KS.m"; sourceTree = "<group>"; };
 		372F64471BA03A9000A595A3 /* KSToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSToolkit.h; sourceTree = "<group>"; };
+		376207D71BAFF806003CBE02 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		376207D81BAFF806003CBE02 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		515B515470CDFCE557D7A446 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9AE41D314ED4872015B402C8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE5DF5B2EA5749C45365288 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +219,8 @@
 				372F642C1BA022E500A595A3 /* NSString+KS.m */,
 				372F642D1BA022E500A595A3 /* NSURL+KS.h */,
 				372F642E1BA022E500A595A3 /* NSURL+KS.m */,
+				376207D71BAFF806003CBE02 /* Base64.m */,
+				376207D81BAFF806003CBE02 /* Base64.h */,
 			);
 			name = NSCategory;
 			sourceTree = "<group>";
@@ -238,11 +241,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 372F63B51BA01B7C00A595A3 /* Build configuration list for PBXNativeTarget "KSToolkit" */;
 			buildPhases = (
-				2A1D50CFEB06DDB1C0720C8D /* Check Pods Manifest.lock */,
 				372F638E1BA01B7B00A595A3 /* Sources */,
 				372F638F1BA01B7B00A595A3 /* Frameworks */,
 				372F63901BA01B7B00A595A3 /* Resources */,
-				5D98A553925991D59166046B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,39 +329,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2A1D50CFEB06DDB1C0720C8D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5D98A553925991D59166046B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		372F638E1BA01B7B00A595A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -374,6 +342,7 @@
 				372F639E1BA01B7C00A595A3 /* ViewController.m in Sources */,
 				372F64321BA022E500A595A3 /* NSMutableArray+KS.m in Sources */,
 				372F64461BA02E0300A595A3 /* UIButton+KS.m in Sources */,
+				376207D91BAFF806003CBE02 /* Base64.m in Sources */,
 				372F64441BA02E0300A595A3 /* UITableView+KS.m in Sources */,
 				372F639B1BA01B7C00A595A3 /* AppDelegate.m in Sources */,
 				372F64431BA02E0300A595A3 /* UIImageView+KS.m in Sources */,

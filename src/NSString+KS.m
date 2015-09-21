@@ -7,8 +7,9 @@
 //
 
 #import "NSString+KS.h"
+#import "Base64.h"
 #import <CommonCrypto/CommonCrypto.h>
-#import <Base64.h>
+
 
 @implementation NSString (KS)
 

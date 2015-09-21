@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KSToolkit"
-  s.version      = "0.3.1"
+  s.version      = "0.3.2"
   s.summary      = "KSToolkit"
 
   s.description  = <<-DESC
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/bing6/KSToolkit.git", :tag => "0.3.1" }
+  s.source       = { :git => "https://github.com/bing6/KSToolkit.git", :tag => "0.3.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -131,6 +131,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  #s.dependency "Base64nl", "~> 1.2"
+  #s.dependency "Base64nl", "1.2"
 
 end
