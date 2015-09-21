@@ -63,20 +63,21 @@ return __object;\
 //=====================================================================>
 
 /**
- *  判断设备型号
- */
-#define IHPONEWHAT [UIDevice currentDevice].model
-/**
  * @brief 判断IOS7以上版本
  */
-#define __IOS7_OR_LATER [[UIDevice currentDevice].systemVersion floatValue] >= 7.0f
+#define __IOS7_OR_LATER ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0f)
 /**
  * @brief 判断IOS8以上版本
  */
-#define __IOS8_OR_LATER [[UIDevice currentDevice].systemVersion floatValue] >= 8.0f
+#define __IOS8_OR_LATER ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0f)
+/**
+ * @brief 判断IOS8以上版本
+ */
+#define __IOS9_OR_LATER ([[UIDevice currentDevice].systemVersion floatValue] >= 9.0f)
 
 #define KS_IOS7_OR_LATER __IOS7_OR_LATER
 #define KS_IOS8_OR_LATER __IOS8_OR_LATER
+#define KS_IOS9_OR_LATER __IOS9_OR_LATER
 
 #define KS_APP_VERSION      [[NSBundle mainBundle].infoDictionary objectForKey:@"CFBundleShortVersionString"]
 #define KS_APP_BUILDER      [[NSBundle mainBundle].infoDictionary objectForKey:@"CFBundleVersion"]
