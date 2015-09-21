@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KSToolkit"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "KSToolkit"
 
   s.description  = <<-DESC
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/bing6/KSToolkit.git", :tag => "0.2" }
+  s.source       = { :git => "https://github.com/bing6/KSToolkit.git", :tag => "0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
