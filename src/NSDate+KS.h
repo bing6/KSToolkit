@@ -15,7 +15,7 @@
 #define KS_MILLISECONDS_WITH_DAY (24.f * 60.f * 60.f * 1000.f)
 #define KS_MILLISECONDS(s)       (24.f * 60.f * 60.f * 1000.f * (s))
 //将Long值转换为时间类型
-#define KS_DATE_UTC1970_L(s) [NSDate dateWithTimeIntervalSince1970:(s * 0.1) / 1000]
+#define KS_DATE_UTC1970_L(s) [NSDate dateWithTimeIntervalSince1970:(s * 1.0f) / 1000]
 //将Double值转换为时间类型
 #define KS_DATE_UTC1970_D(s) [NSDate dateWithTimeIntervalSince1970:s]
 //获取当前时间,返回的是一个LONG类型值
